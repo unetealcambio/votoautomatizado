@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
@@ -15,39 +16,70 @@
 
 	<style type="text/css">
 		.blinking_white {
-  			-webkit-animation: color_change_white 1s infinite alternate;
-  			-moz-animation: color_change_white 1s infinite alternate;
-  			-ms-animation: color_change_white 1s infinite alternate;
-  			-o-animation: color_change_white 1s infinite alternate;
-  			animation: color_change_white 1s infinite alternate;
+			-webkit-animation: color_change_white 1s infinite alternate;
+			-moz-animation: color_change_white 1s infinite alternate;
+			-ms-animation: color_change_white 1s infinite alternate;
+			-o-animation: color_change_white 1s infinite alternate;
+			animation: color_change_white 1s infinite alternate;
 		}
+
 		@-webkit-keyframes color_change_white {
-  			from { color: #fff; }
-  			to { color: #3498db; }
+			from {
+				color: #fff;
+			}
+
+			to {
+				color: #3498db;
+			}
 		}
+
 		@-moz-keyframes color_change_white {
-  			from { color: #fff; }
-  			to { color: #3498db; }
+			from {
+				color: #fff;
+			}
+
+			to {
+				color: #3498db;
+			}
 		}
+
 		@-ms-keyframes color_change_white {
-  			from { color: #fff; }
-  			to { color: #3498db }
+			from {
+				color: #fff;
+			}
+
+			to {
+				color: #3498db
+			}
 		}
+
 		@-o-keyframes color_change_white {
-  			from { color: #fff; }
-  			to { color: #3498db; }
+			from {
+				color: #fff;
+			}
+
+			to {
+				color: #3498db;
+			}
 		}
+
 		@keyframes color_change_white {
-  			from { color: #fff; }
-  			to { color: #3498db; }
+			from {
+				color: #fff;
+			}
+
+			to {
+				color: #3498db;
+			}
 		}
 	</style>
 	<script src="https://kit.fontawesome.com/fa7c3a4d84.js"></script>
 </head>
+
 <body>
-	
+
 	<div class="container">
-		
+
 		<div class="row ">
 			<div class="col-12 ">
 				<p class="text-center texto_inicio"><strong>Simulador Sistema De Voto Automatizado </strong></p>
@@ -56,61 +88,77 @@
 				<p class="litle-text"><strong>Primarias Simultáneas Partidos Políticos 6 Octubre 2019</strong></p>
 			</div>
 		</div>
-	
-
-						
-                            <div class="col-md-12 Bordes" style="border:  1px solid black; border-radius: 20px;">
-                                <div class="row justify-content-between">
-                                    <div class="col-md-4" >
-                                        <table class="table table-borderless" id="tabla-lugar">
-                                            <tbody>
-                                                <tr>
-                                                    <th><p class="negrita derecha">Provincia:</p></th>
-                                                    <td><p class="izquierdaTh">San Pedro de Macoris</p></td>
-                                                </tr>
-                                                <tr>
-                                                    <th><p class="negrita derecha">Municipio:</p></th>
-                                                    <td><p class="izquierdaTh" id="municipio"></p></td>
-                                                </tr>
-                                                <tr>
-                                                    <th><p class="negrita derecha">Circunscripción:</p></th>
-                                                    <td><p class="izquierdaTh">Demo</p></td>
-                                                </tr>
-                                                <tr>
-                                                    <th><p class="negrita derecha">Mesa:</p></th>
-                                                    <td><p class="izquierdaTh">Demo</p></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>                                      
-                                    </div>
-                                        <div class="col-md-4 derechaLogo text-center">
-                                            <h6 class="Encabezado negrita ">
-                                                PARTIDO POLITICO
-                                            </h6>
-											<img src="images/prm-logo.png" id="logo-final">
-											<h6>
-													PARTIDO REVOLUCIONARIO MODERNO
-											</h6>
-                                        </div>
-                                </div>
-							</div>
-			
-                
 
 
 
-
-
-
-	<div class="row text-center" style="margin-top: 1rem; margin-bottom: 1rem;">
-		<div class="col-12">
-			<h2>Usted Voto Por:</h2>
+		<div class="col-md-12 Bordes" style="border:  1px solid black; border-radius: 20px;">
+			<div class="row justify-content-between">
+				<div class="col-md-4">
+					<table class="table table-borderless" id="tabla-lugar">
+						<tbody>
+							<tr>
+								<th>
+									<p class="negrita derecha">Provincia:</p>
+								</th>
+								<td>
+									<p class="izquierdaTh">San Pedro de Macoris</p>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<p class="negrita derecha">Municipio:</p>
+								</th>
+								<td>
+									<p class="izquierdaTh" id="municipio"></p>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<p class="negrita derecha">Circunscripción:</p>
+								</th>
+								<td>
+									<p class="izquierdaTh">Demo</p>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<p class="negrita derecha">Mesa:</p>
+								</th>
+								<td>
+									<p class="izquierdaTh">Demo</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-4 derechaLogo text-center">
+					<h6 class="Encabezado negrita ">
+						PARTIDO POLITICO
+					</h6>
+					<img src="images/prm-logo.png" id="logo-final">
+					<h6>
+						PARTIDO REVOLUCIONARIO MODERNO
+					</h6>
+				</div>
+			</div>
 		</div>
-	</div>
 
 
 
-	<div class="col-md-12 centralizado ">
+
+
+
+
+
+		<div class="row text-center" style="margin-top: 1rem; margin-bottom: 1rem;">
+			<div class="col-12">
+				<h2>Usted Voto Por:</h2>
+			</div>
+		</div>
+
+
+
+		<div class="col-md-12 centralizado ">
 			<div class="table-responsive">
 				<table class="table table-striped " id="tabla-candidatos">
 					<thead>
@@ -120,93 +168,99 @@
 						</tr>
 					</thead>
 					<tbody>
-							<tr>
-								<td class="capitalize text-right">Presidente(a)</td>
-								<td class="divImagen"><img src="images/p.png"></td>
-								<td class="capitalize text-center" id="presidente"></td>
+						<tr>
+							<td class="capitalize text-right">Presidente(a)</td>
+							<td class="divImagen"><img src="images/p.png"></td>
+							<td class="capitalize text-center" id="presidente"></td>
 
-							</tr>
-							<tr>
-									<td class="capitalize text-right">Diputado(a)</td>
-									<td class="divImagen"><img src="images/d.png"></td>
-									<td class="capitalize text-center" id="diputado"></td>
+						</tr>
+						<tr>
+							<td class="capitalize text-right">Diputado(a)</td>
+							<td class="divImagen"><img src="images/d.png"></td>
+							<td class="capitalize text-center" id="diputado"></td>
 
-								</tr>
-								<tr>
-										<td class="capitalize text-right">Regidor(a)</td>
-										<td class="divImagen"><img src="images/r.png"></td>
-										<td class="capitalize text-center align-items-center" id="regidor"></td>
-		
-									</tr>
+						</tr>
+						<tr id="bloque-alcalde">
+							<td class="capitalize text-right">Alcalde</td>
+							<td class="divImagen"><img src="images/a.png"></td>
+							<td class="capitalize text-center" id="alcalde"></td>
+						</tr>
+						<tr>
+							<td class="capitalize text-right">Regidor(a)</td>
+							<td class="divImagen"><img src="images/r.png"></td>
+							<td class="capitalize text-center align-items-center" id="regidor"></td>
+
+						</tr>
 					</tbody>
-					</table>
-					</div>
-					</div>
+				</table>
+			</div>
+		</div>
 
 
-					<div class="row justify-content-between barra_partidos" style="padding: 0.3em">
-							<div class="col-8 ">
-								<a href="index.html" class="btn btn-light blinking_white "  id="reset"><i class="fa fa-arrow-left"></i> Volver a Intentar</a>
-							</div>
-							<div class="col-4 text-right">
-								<a href="#" class="btn btn-light">Imprimir</a>
-							</div>			
-</div>
-	
-	
+		<div class="row justify-content-between barra_partidos" style="padding: 0.3em">
+			<div class="col-8 ">
+				<a href="index.html" class="btn btn-light blinking_white " id="reset"><i class="fa fa-arrow-left"></i>
+					Volver a Intentar</a>
+			</div>
+			<div class="col-4 text-right">
+				<a href="#" class="btn btn-light">Imprimir</a>
+			</div>
+		</div>
+
+
 
 	</div>
-  <footer>
-     <hr>
-     <div class="row">
-     	<div class="col-12 text-center">
-     	<p>
-       Este simulador de voto automatizado,  a sido modificado para adartarlo a nuestros candidatos. Todas las imagines a exepcion de la del partido y los candidatos, han sido tomadas del simulador oficial de la JCE que se encuentra en la siguiente direccion: www.aprendeavotar.jce.gob.do
-     </p>
-     </div>
-     
-     </div>
-     <div class="row justify-content-center">
-     	<div class="col-4 col-sm-3 col-md-2 ">
-     	<img src="images/unete.png" style="max-width: 100%;">
-     </div>
-     </div>
-     
-     
-     
-  </footer>
- 
+	<footer>
+		<hr>
+		<div class="row">
+			<div class="col-12 text-center">
+				<p>
+					Este simulador de voto automatizado, a sido modificado para adartarlo a nuestros candidatos. Todas
+					las imagines a exepcion de la del partido y los candidatos, han sido tomadas del simulador oficial
+					de la JCE que se encuentra en la siguiente direccion: www.aprendeavotar.jce.gob.do
+				</p>
+			</div>
 
-	
-	<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js" ></script>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-4 col-sm-3 col-md-2 ">
+				<img src="images/unete.png" style="max-width: 100%;">
+			</div>
+		</div>
+
+
+
+	</footer>
+
+
+
+	<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+		integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous">
+	</script>
 	<script type="text/javascript" src="js/html2canvas.min.js"></script>
 
 	<script type="text/javascript">
-
 		document.getElementById('presidente').innerText = sessionStorage.getItem('presidente')
 		document.getElementById('diputado').innerText = sessionStorage.getItem('diputado')
 		document.getElementById('regidor').innerText = sessionStorage.getItem('regidor')
 		document.getElementById('municipio').innerText = sessionStorage.getItem('municipio')
 
-		document.getElementById('reset').addEventListener('click', function(){
+		document.getElementById('reset').addEventListener('click', function () {
 			sessionStorage.clear()
 		})
+
+		bloqueAlcalde = document.getElementById("bloque-alcalde")
+		if(sessionStorage.getItem('municipio') === 'San Pedro De Macoris'){
+			console.log('Estoy Funcionando')
+			bloqueAlcalde.style.display = "none";
+		}
 
 		//sessionStorage.clear();
 	</script>
 
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-

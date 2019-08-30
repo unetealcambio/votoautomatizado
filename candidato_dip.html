@@ -133,8 +133,8 @@
 				break;
 
 			case 'Quisqueya':
-				linkRegidor1.setAttribute('href', 'regidor_quisqueya.html')
-				linkRegidor2.setAttribute('href', 'regidor_quisqueya.html')
+				linkRegidor1.setAttribute('href', 'alcalde_quisqueya.html')
+				linkRegidor2.setAttribute('href', 'alcalde_quisqueya.html')
 				break;
 
 			case 'Ramon Santana':
@@ -146,12 +146,12 @@
 				break;
 
 			default:
-			linkRegidor1.setAttribute('href', 'regidor.html')
+				linkRegidor1.setAttribute('href', 'regidor.html')
 				linkRegidor2.setAttribute('href', 'regidor.html')
 				break;
 		}
 
-		if(sessionStorage.getItem('audio') === 'si'){
+		if(sessionStorage.getItem('audio') === 'Si'){
 			$(document).ready(function(){
 				setTimeout(function(){
 			  		var audio1 = new Audio();

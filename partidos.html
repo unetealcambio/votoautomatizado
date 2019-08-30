@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145425009-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145425009-1');
+</script>
+
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<style type="text/css">
+		.blinking_green {
+  			-webkit-animation: color_change_green 0.6s infinite alternate;
+  			-moz-animation: color_change_green 0.6s infinite alternate;
+  			-ms-animation: color_change_green 0.6s infinite alternate;
+  			-o-animation: color_change_green 0.6s infinite alternate;
+  			animation: color_change_green 0.6s infinite alternate;
+		}
+		@-webkit-keyframes color_change_green {
+  			from { color: #04B404; }
+  			to { color: #81F781; }
+		}
+		@-moz-keyframes color_change_green {
+  			from { color: #04B404; }
+  			to { color: #81F781; }
+		}
+		@-ms-keyframes color_change_green {
+  			from { color: #04B404; }
+  			to { color: #81F781; }
+		}
+		@-o-keyframes color_change_green {
+  			from { color: #04B404; }
+  			to { color: #81F781; }
+		}
+		@keyframes color_change_green {
+  			from { color: #04B404; }
+  			to { color: #81F781; }
+		}
+	</style>
+
+	<title>Simulador de Votos</title>
+	
+</head>
+<body>
+	
+	<div class="container">
+		
+		<audio id="audio">
+			<source src="audio/seleccion_partido.mp3" type="audio/mp3">
+			<source src="audio/seleccion_partido.ogg" type="audio/ogg">
+		</audio>
+		
+		<div class="row ">
+			<div class="col-12 ">
+				<p class="text-center texto_inicio"><strong>Simulador Sistema De Voto Automatizado </strong></p>
+			</div>
+			<div class="col-12">
+				<p class="litle-text"><strong>Primarias Simultáneas Partidos Políticos 6 Octubre 2019<strong></p>
+			</div>
+		</div>
+
+		<div class="row barra_partidos text-uppercase text-center" >
+			<div class="col-12">
+				<h3 >partidos politicos</h3>
+				<p class="litle_text green-text blinking_green">Toque El Recuadro De Su Preferencia</p>
+			</div>
+		</div>
+
+		<div class="row" id="partidos-gallery">
+			<div class="col-4">
+				<div class="thumbnail">
+					<a href="#">
+						<img src="images/pld_logo.png" class="img-thumbnail">
+            <p class="caption"><strong>PARTIDO DE LA LIBERACION DOMINICANA</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="thumbnail">
+					<a href="prm.html">
+            <img src="images/prm-logo.png" class="img-thumbnail">
+            <p class="caption"><strong>PARTIDO REVOLUCIONARIO MODERNO</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="thumbnail">
+					<a href="#">
+            <img src="images/no_votar.png" class="img-thumbnail">
+            <p class="caption"><strong>NO VOTAR</strong></p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+     <hr>
+     <div class="row">
+     	<div class="col-12 text-center">
+     	<p>
+       Este simulador de voto automatizado,  a sido modificado para adartarlo a nuestros candidatos. Todas las imagines a exepcion de la del partido y los candidatos, han sido tomadas del simulador oficial de la JCE que se encuentra en la siguiente direccion: www.aprendeavotar.jce.gob.do
+     </p>
+     </div>
+     
+     </div>
+     <div class="row justify-content-center">
+     	<div class="col-3 ">
+     	<img src="images/unete.png" style="max-width: 100%;">
+     </div>
+     </div>
+     
+     
+     
+  </footer>
+  
+	</div>	
+
+ 
+
+	
+	<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js" ></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		
+		
+
+        if(sessionStorage.getItem('audio') === 'Si'){
+			$(document).ready(function(){
+				setTimeout(function(){
+			  		var audio1 = new Audio();
+			  		audio1.src = "audio/seleccion_partido.mp3";
+			  		audio1.play();
+				}, 500);
+			})
+		}
+
+	</script>
+</body>
+</html>
