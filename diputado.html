@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<style type="text/css">
+		.blinking_white {
+  			-webkit-animation: color_change_white 0.6s infinite alternate;
+  			-moz-animation: color_change_white 0.6s infinite alternate;
+  			-ms-animation: color_change_white 0.6s infinite alternate;
+  			-o-animation: color_change_white 0.6s infinite alternate;
+  			animation: color_change_white 0.6s infinite alternate;
+		}
+		@-webkit-keyframes color_change_white {
+  			from { color: #fff; }
+  			to { color: #bbb; }
+		}
+		@-moz-keyframes color_change_white {
+  			from { color: #fff; }
+  			to { color: #bbb; }
+		}
+		@-ms-keyframes color_change_white {
+  			from { color: #fff; }
+  			to { color: #bbb; }
+		}
+		@-o-keyframes color_change_white {
+  			from { color: #fff; }
+  			to { color: #bbb; }
+		}
+		@keyframes color_change_white {
+  			from { color: #fff; }
+  			to { color: #bbb; }
+		}
+	</style>
+
+
+
+	<title>Simulador de Votos</title>
+	
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row ">
+			<div class="col-12 ">
+				<p class="text-center texto_inicio"><strong>Simulador Sistema De Voto Automatizado </strong></p>
+			</div>
+			<div class="col-12">
+				<p class="litle-text"><strong>Primarias Simultáneas Partidos Políticos 6 Octubre 2019<strong></p>
+			</div>
+		</div>
+
+		<div class="row text-center" >
+			<div class="col-2 col-lg-1" style="padding: 0px; margin: 0px;">
+				<div class="thumbnail">
+					<img src="images/prm-logo.png" class="img-thumbnail" style="width: 100%; height: 100%; margin: 0px">
+				</div>
+			</div>
+			<div class="col-8 col-lg-10 barra_partidos_eleccion">
+				<h6>Nivel: Congresional</h6>
+				<h2 class="blinking_white">DIPUTADO(A)</h2>
+				<h5 class="blinking_white" >TOQUE EL RECUADRO DE SU PREFERENCIA</h5>
+			</div>
+			<div class="col-2 col-lg-1" style="padding: 0px; margin: 0px;">
+				<div class="thumbnail">
+					<img src="images/d.png" class="img img-thumbnail margin-right" style="width: 100%; height: 100%; margin: 0px">
+				</div>
+			</div>	
+		</div>
+
+		<div class="row" id="partidos-gallery">
+			<div class="col-4 col-lg-2" >
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero">1</div>
+					<a >
+						<img src="images/candidatos/Candidato-M.PNG" class="img-thumbnail" id="candidatoD1">
+						<p class="caption"><strong>MIJALISON ALMONTE<BR>DIPUTADO(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-lg-2" >
+				<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+					<div class="numero">2</div>
+					<a href="candidato_dip.html">
+           				 <img src="images/candidatos/nelson.png" class="img-thumbnail" id="candidatoD2">
+           				 <p class="caption"><strong>NELSON ARROYO <BR>DIPUTADO(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-lg-2">
+					<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+						<div class="numero">3</div>
+					<a href="candidato_dip.html">
+						<img src="images/candidatos/Ramon_Gomez.png" class="img-thumbnail" id="candidatoD3">
+						<p class="caption"><strong>RAMON GOMEZ<BR>DIPUTADO(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-lg-2">
+					<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+							<div class="numero">4</div>
+					<a href="candidato_dip.html">
+						<img src="images/candidatos/Candidato-F.PNG" class="img-thumbnail" id="candidatoD4">
+						<p class="caption"><strong>TAMARA NURSE<BR>DIPUTADO(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-lg-2">
+					<div class="thumbnail marco" style="display: flex;justify-content: flex-end;" >
+						<div class="numero">5</div>
+					<a href="candidato_dip.html">
+						<img src="images/candidatos/Candidato-M.PNG" class="img-thumbnail" id="candidatoD5">
+						<p class="caption"><strong>BRUNO ORTIZ<BR>DIPUTADO(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-lg-2">
+					<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+							<div class="numero">6</div>
+					<a href="candidato_dip.html">
+						<img src="images/candidatos/Mirian_Paucicles.png" class="img-thumbnail" id="candidatoD6">
+						<p class="caption"><strong>MIRIAN PAUSECLES<BR>DIPUTADO(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-lg-2">
+					<div class="thumbnail marco" style="display: flex;justify-content: flex-end;" >
+						<div class="numero">5</div>
+					<a href="candidato_dip.html">
+						<img src="images/candidatos/Candidato-M.PNG" class="img-thumbnail" id="candidatoD7">
+						<p class="caption"><strong>LUIS PENA<BR>DIPUTADO(A)</strong></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 col-lg-2">
+				<div class="thumbnail marco">
+					<a href="candidato_dip.html">
+						<img src="images/candidatos/ninguno.png" class="img-thumbnail" id="candidatoD0">
+						<p class="caption"><strong>NINGUNO</strong></p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</div>	
+	
+	<footer>
+     <hr>
+     <p>
+       Este simulador de voto automatizado,  a sido modificado para adartarlo a nuestros candidatos. Todas las imagines a exepcion de la del partido y los candidatos, han sido tomadas del simulador oficial de la JCE que se encuentra en la siguiente direccion: www.aprendeavotar.jce.gob.do
+     </p>
+  </footer>
+	
+	<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js" ></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+
+if(sessionStorage.getItem('audio') === 'si'){
+			$(document).ready(function(){
+				setTimeout(function(){
+			  		var audio1 = new Audio();
+			  		audio1.src = "audio/diputado.mp3";
+			  		audio1.play();
+				}, 500);
+			})
+		}
+		
+			let candidatoD1 = document.getElementById('candidatoD1')
+            let candidatoD2 = document.getElementById('candidatoD2')
+            let candidatoD3 = document.getElementById('candidatoD3')
+            let candidatoD4 = document.getElementById('candidatoD4')
+			let candidatoD5 = document.getElementById('candidatoD5')
+			let candidatoD6 = document.getElementById('candidatoD6')
+			let candidatoD7 = document.getElementById('candidatoD7')
+            let candidatoD0 = document.getElementById('candidatoD0')
+
+            candidatoD1.addEventListener('click', function(){
+                sessionStorage.setItem('diputado', 'MIJALISON ALMONTE')
+                sessionStorage.setItem('imageSrcD', 'images/candidatos/Candidato-M.PNG')
+				sessionStorage.setItem('numeroD', 1)
+                window.location.href = 'candidato_dip.html'
+            })
+            
+            candidatoD2.addEventListener('click', function(){
+                sessionStorage.setItem('diputado', 'NELSON ARROYO')
+                sessionStorage.setItem('imageSrcD', 'images/candidatos/nelson.png')
+				sessionStorage.setItem('numeroD', 2)
+                window.location.href = 'candidato_dip.html'
+            })
+            
+            candidatoD3.addEventListener('click', function(){
+                sessionStorage.setItem('diputado', 'RAMON GOMEZ')
+                sessionStorage.setItem('imageSrcD', 'images/candidatos/Ramon_Gomez.png')
+				sessionStorage.setItem('numeroD', 3)
+                window.location.href = 'candidato_dip.html'
+            })
+            
+            candidatoD4.addEventListener('click', function(){
+                sessionStorage.setItem('diputado', 'TAMARA NURSE')
+                sessionStorage.setItem('imageSrcD', 'images/candidatos/Candidato-F.PNG')
+				sessionStorage.setItem('numeroD', 4)
+                window.location.href = 'candidato_dip.html'
+            })
+
+			candidatoD5.addEventListener('click', function(){
+                sessionStorage.setItem('diputado', 'BRUNO ORTIZ')
+                sessionStorage.setItem('imageSrcD', 'images/candidatos/Candidato-M.PNG')
+				sessionStorage.setItem('numeroD', 5)
+                window.location.href = 'candidato_dip.html'
+            })
+
+			candidatoD6.addEventListener('click', function(){
+                sessionStorage.setItem('diputado', 'MIRIAN PAUSECLES')
+                sessionStorage.setItem('imageSrcD', 'images/candidatos/Mirian_Paucicles.png')
+				sessionStorage.setItem('numeroD', 6)
+                window.location.href = 'candidato_dip.html'
+            })
+
+			candidatoD7.addEventListener('click', function(){
+                sessionStorage.setItem('diputado', 'LUIS PENA')
+                sessionStorage.setItem('imageSrcD', 'images/candidatos/Candidato-M.PNG')
+				sessionStorage.setItem('numeroD', 7)
+                window.location.href = 'candidato_dip.html'
+            })
+            
+            candidatoD0.addEventListener('click', function(){
+                sessionStorage.setItem('diputado', 'NINGUNO')
+                sessionStorage.setItem('imageSrcD', 'images/candidatos/ninguno.png')
+				sessionStorage.setItem('numeroD', 0)
+                window.location.href = 'candidato_dip.html'
+			})
+
+		
+	</script>
+</body>
+</html>

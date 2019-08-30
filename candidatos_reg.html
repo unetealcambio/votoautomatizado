@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<style type="text/css">
+		.blinking_white {
+  			-webkit-animation: color_change_white 0.6s infinite alternate;
+  			-moz-animation: color_change_white 0.6s infinite alternate;
+  			-ms-animation: color_change_white 0.6s infinite alternate;
+  			-o-animation: color_change_white 0.6s infinite alternate;
+  			animation: color_change_white 0.6s infinite alternate;
+		}
+		@-webkit-keyframes color_change_white {
+  			from { color: #fff; }
+  			to { color: #bbb; }
+		}
+		@-moz-keyframes color_change_white {
+  			from { color: #fff; }
+  			to { color: #bbb; }
+		}
+		@-ms-keyframes color_change_white {
+  			from { color: #fff; }
+  			to { color: #bbb; }
+		}
+		@-o-keyframes color_change_white {
+  			from { color: #fff; }
+  			to { color: #bbb; }
+		}
+		@keyframes color_change_white {
+  			from { color: #fff; }
+  			to { color: #bbb; }
+		}
+	</style>
+
+
+
+	<title>Simulador de Votos</title>
+	
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row ">
+			<div class="col-12 ">
+				<p class="text-center texto_inicio"><strong>Simulador Sistema De Voto Automatizado </strong></p>
+			</div>
+			<div class="col-12">
+				<p class="litle-text"><strong>Primarias Simultáneas Partidos Políticos 6 Octubre 2019<strong></p>
+			</div>
+		</div>
+
+		<div class="row text-center" >
+			<div class="col-1" style="padding: 0px; margin: 0px;">
+				<div class="thumbnail">
+					<img src="images/prm-logo.png" class="img-thumbnail" style="width: 100%; height: 100%; margin: 0px">
+				</div>
+			</div>
+			<div class="col-10 barra_partidos_eleccion">
+				<h6>Nivel: Municipal</h6>
+				<h2 class="blinking_white">REGIDOR(A)</h2>
+			</div>
+			<div class="col-1" style="padding: 0px; margin: 0px;">
+				<div class="thumbnail">
+					<img src="images/r.png" class="img img-thumbnail margin-right" style="width: 100%; height: 100%; margin: 0px">
+				</div>
+			</div>	
+		</div>
+		<div class="row text-uppercase text-center " >
+			<a href="regidor.html" class="col-12 col-md-3 btn btn-danger"><span class="text-grande black-text">RETORNAR</span></a>
+			<div class="col-12 col-md-6 black">
+				<div class="divHijo">
+					<h5 class="text-grande">TOQUE NUEVAMENTE EL RECUADRO PARA CONFIRMAR</h5>
+				</div>
+			</div>
+			<a href="voto.html" class="col-12 col-md-3 btn btn-success"><span class="text-grande black-text blinking">CONTINUAR</span></a>
+		</div>
+
+		<div class="row justify-content-center" id="partidos-gallery">
+			<div class="col-6 col-md-5">
+					<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+							<div class="numero"><p style="text-align: center; vertical-align: middle" id="numeroR"></p></div>
+					<a href="voto.html">
+						<img src="" class="img-thumbnail" id="fotoCandidatoR">
+						<p class="caption"><strong><span id="nombreR"></span> <BR>REGIDOR(A)</strong></p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</div>	
+
+	<footer>
+     <hr>
+     <p>
+       Este simulador de voto automatizado,  a sido modificado para adartarlo a nuestros candidatos. Todas las imagines a exepcion de la del partido y los candidatos, han sido tomadas del simulador oficial de la JCE que se encuentra en la siguiente direccion: www.aprendeavotar.jce.gob.do
+     </p>
+  </footer>
+	
+	<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js" ></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+
+		document.getElementById('fotoCandidatoR').setAttribute('src', sessionStorage.getItem('imageScrR'))
+		document.getElementById('nombreR').innerText = sessionStorage.getItem('regidor')
+		document.getElementById('numeroR').innerText = sessionStorage.getItem('numeroR')
+        if (sessionStorage.getItem('numeroR') === '0') {
+			document.getElementById('numeroR').innerText = ''
+		}
+
+		if(sessionStorage.getItem('audio') === 'si'){
+			$(document).ready(function(){
+				setTimeout(function(){
+			  		var audio1 = new Audio();
+			  		audio1.src = "audio/correcta.mp3";
+			  		audio1.play();
+				}, 500);
+			})
+		}
+	</script>
+</body>
+</html>

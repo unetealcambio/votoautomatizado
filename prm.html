@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<title>Simulador de Votos</title>
+	
+</head>
+<body>
+		<audio id="audio1">
+				<source src="audio/correcta.mp3" type="audio/mp3">
+		</audio>
+	<div class="container">
+				<div class="row ">
+			<div class="col-12 ">
+				<p class="text-center texto_inicio"><strong>Simulador Sistema De Voto Automatizado </strong></p>
+			</div>
+			<div class="col-12">
+				<p class="litle-text"><strong>Primarias Simultáneas Partidos Políticos 6 Octubre 2019<strong></p>
+			</div>
+		</div>
+
+		<div class="row barra_partidos text-uppercase text-center" >
+			<div class="col-12">
+				<h3 >partidos politicos</h3>
+			</div>
+		</div>
+		<div class="row barra_partidos text-uppercase text-center " >
+			<a href="index.html" class="col-12 col-md-3 btn btn-danger"><span class="text-grande black-text">RETORNAR</span></a>
+			<div class="col-12 col-md-6 black">
+				<div class="divHijo">
+					<h5 class="text-grande">TOQUE NUEVAMENTE EL RECUADRO PARA CONFIRMAR</h5>
+				</div>
+			</div>
+			<a href="presidente.html" class="col-12 col-md-3 btn btn-success"><span class="text-grande black-text blinking">CONTINUAR</span></a>
+		</div>
+
+		<div class="row justify-content-center" id="partidos-gallery">
+			<div class="col-6 col-md-5">
+				<div class="thumbnail">
+					<a href="presidente.html">
+						<img src="images/prm-logo.png" class="img-thumbnail">
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</div>	
+
+	
+	<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js" ></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		if(sessionStorage.getItem('audio') === 'si'){
+			$(document).ready(function(){
+				setTimeout(function(){
+			  		var audio1 = new Audio();
+			  		audio1.src = "audio/correcta.mp3";
+			  		audio1.play();
+				}, 500);
+			})
+		}
+		
+	</script>
+</body>
+</html>

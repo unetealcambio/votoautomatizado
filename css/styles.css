@@ -1,0 +1,229 @@
+
+
+a {
+  text-decoration: none !important;;
+}
+.encabezado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+#barra {
+  background-color: #54301a; 
+  color: white;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+#barra2 {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+img {
+  margin: 5px 10px 5px 0px; }
+
+.litle-text {
+  text-align: center; }
+
+.barra_partidos {
+  background-color: #1b508c;
+  color: white;
+  padding-top: 1.5em; 
+  margin: 15px;
+}
+
+  .barra_partidos_eleccion {
+  background-color: #1b508c;
+  color: white;
+  padding-top: 0; }
+
+  .barra_partidos_eleccion h2{
+  font-size: 1.3rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+ .barra_partidos_eleccion h6{
+  font-size: 0.8rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+.barra_partidos_eleccion h5{
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.texto_inicio {
+  margin-bottom: 0px; }
+
+.green-text {
+  color: green; }
+
+#partidos-gallery {
+  padding-top: .8em;
+  text-align: center; }
+
+.caption {
+  font-size: 0.7em;
+  color: #000; }
+
+.black {
+  background-color: #000;
+}
+
+.black-text{
+  color: #000;
+}
+
+.divHijo {
+  background-color: #5d5d57;
+}
+
+.divHijo h5{
+  margin-bottom: 0;
+}
+
+.text-grande {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+footer {
+  font-size: 0.5em;
+}
+.elecciones p:first-child {
+  margin-bottom: 0.2em;
+}
+
+.numero {
+  box-sizing: border-box;
+  padding: 0.5rem !important;
+  margin-right: auto !important;
+  border-width: 1px;
+  background-color: ghostwhite;
+  position: absolute;
+  z-index: 1;
+  color: #000;
+  text-align: center;
+  border: solid;
+  width: 16%;
+  padding: 0 !important;
+  height: 14% !important;
+}
+.marco {
+  border: 1px solid black;
+  margin-bottom: 10PX;
+}
+
+#tabla-lugar  p {
+  margin: 0;
+  font-size: 15px;
+}
+
+#logo-final {
+  width: 50%;
+}
+
+#tabla-candidatos td{
+    width: 14%;
+}
+
+#tabla-candidatos img {
+  width: 14%;
+}
+
+#tabla-candidatos thead {
+  background: #1b508c;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#numeroD, #numeroP, #numeroR{
+  font-size: 2.5rem;
+}
+
+.blinking {
+  -webkit-animation: color_change 0.6s infinite alternate;
+  -moz-animation: color_change 0.6s infinite alternate;
+  -ms-animation: color_change 0.6s infinite alternate;
+  -o-animation: color_change 0.6s infinite alternate;
+  animation: color_change 0.6s infinite alternate;
+}
+
+
+@-webkit-keyframes color_change {
+  from { color: #000; }
+  to { color: #fff; }
+}
+@-moz-keyframes color_change {
+  from { color: #000; }
+  to { color: #fff; }
+}
+@-ms-keyframes color_change {
+  from { color: #000; }
+  to { color: #fff; }
+}
+@-o-keyframes color_change {
+  from { color: #000; }
+  to { color: #fff; }
+}
+@keyframes color_change {
+  from { color: #000; }
+  to { color: #fff; }
+}
+
+@media screen and (max-width: 768px) { 
+  .barra_partidos_eleccion  h2{
+    font-size: 0.7rem;
+  }
+  .barra_partidos_eleccion  h6{
+    font-size: 0.5rem;
+  }
+  .barra_partidos_eleccion  h5{
+    font-size: 0.5rem;
+  }
+  .black{
+    padding: 0;
+  }
+  #logo-final {
+    width: 20%;
+  }
+  #numeroD, #numeroP, #numeroR{
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 576px) { 
+  .barra_partidos_eleccion  h2{
+    font-size: 0.9rem;
+  }
+  .barra_partidos_eleccion  h6{
+    font-size: 0.4rem;
+  }
+  #header {
+    font-size: 0.5rem;
+  }
+
+  .barra_partidos  a{
+    font-size: 0.7rem;
+  }
+
+  #tabla-candidatos thead {
+
+    font-size: 1rem;
+  }
+
+  #numeroD , #numeroP, #numeroR{
+    font-size: 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 365px) { 
+  #numeroD, #numeroP, #numeroR {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

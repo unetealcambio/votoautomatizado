@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<style type="text/css">
+		.blinking_white {
+  			-webkit-animation: color_change_white 0.6s infinite alternate;
+  			-moz-animation: color_change_white 0.6s infinite alternate;
+  			-ms-animation: color_change_white 0.6s infinite alternate;
+  			-o-animation: color_change_white 0.6s infinite alternate;
+  			animation: color_change_white 0.6s infinite alternate;
+		}
+		@-webkit-keyframes color_change_white {
+  			from { color: #fff; }
+  			to { color: #bbb; }
+		}
+		@-moz-keyframes color_change_white {
+  			from { color: #fff; }
+  			to { color: #bbb; }
+		}
+		@-ms-keyframes color_change_white {
+  			from { color: #fff; }
+  			to { color: #bbb; }
+		}
+		@-o-keyframes color_change_white {
+  			from { color: #fff; }
+  			to { color: #bbb; }
+		}
+		@keyframes color_change_white {
+  			from { color: #fff; }
+  			to { color: #bbb; }
+		}
+	</style>
+
+	<title>Simulador de Votos</title>
+	
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row ">
+			<div class="col-12 ">
+				<p class="text-center texto_inicio"><strong>Simulador Sistema De Voto Automatizado </strong></p>
+			</div>
+			<div class="col-12">
+				<p class="litle-text"><strong>Primarias Simultáneas Partidos Políticos 6 Octubre 2019<strong></p>
+			</div>
+		</div>
+
+		<div class="row text-center" >
+			<div class="col-1" style="padding: 0px; margin: 0px;">
+				<div class="thumbnail">
+					<img src="images/prm-logo.png" class="img-thumbnail" style="width: 100%; height: 100%; margin: 0px">
+				</div>
+			</div>
+			<div class="col-10 barra_partidos_eleccion">
+				<h6 style="font-size: 12px;">Nivel: Nacional</h6>
+				<h2 class="blinking_white">PRESIDENTE(A)</h2>
+				<h6 class="blinking_white" style="font-size: 12px; margin: 0%;">TOQUE EL RECUADRO DE SU PREFERENCIA</h6>
+			</div>
+			<div class="col-1" style="padding: 0px; margin: 0px;">
+				<div class="thumbnail">
+					<img src="images/p.png" class="img img-thumbnail margin-right" style="width: 100%; height: 100%; margin: 0px">
+				</div>
+			</div>	
+		</div>
+
+		<div class="row" id="partidos-gallery">
+				<div class="col-4 col-md-2" >
+						<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+							<div class="numero">1</div>
+							<a href="#">
+								<img src="images/candidatos/abinader.png" class="img-thumbnail" id="candidatoP1">
+								<p class="caption"><strong>LUIS ABINADER <BR>PRESIDENTE(A)</strong></p>
+							</a>
+						</div>
+				</div>
+				<div class="col-4 col-md-2" >
+						<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+							<div class="numero">2</div>
+							<a href="#">
+								<img src="images/candidatos/Candidato-M.PNG" class="img-thumbnail" id="candidatoP2">
+								<p class="caption"><strong>CANDIDATO 2 <BR>PRESIDENTE(A)</strong></p>
+							</a>
+						</div>
+				</div>
+				<div class="col-4 col-md-2" >
+						<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+							<div class="numero">3</div>
+							<a href="#">
+								<img src="images/candidatos/Candidato-M.PNG" class="img-thumbnail" id="candidatoP3">
+								<p class="caption"><strong>CANDIDATO 3 <BR>PRESIDENTE(A)</strong></p>
+							</a>
+						</div>
+				</div>
+				<div class="col-4 col-md-2" >
+						<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
+							<div class="numero">4</div>
+							<a href="#">
+								<img src="images/candidatos/ninguno.png" class="img-thumbnail" id="candidatoP0">
+								<p class="caption"><strong>NINGUNO <BR>PRESIDENTE(A)</strong></p>
+							</a>
+						</div>
+				</div>
+		</div>
+
+	</div>	
+
+	
+	<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js" ></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script >
+
+if(sessionStorage.getItem('audio') === 'si'){
+			$(document).ready(function(){
+				setTimeout(function(){
+			  		var audio1 = new Audio();
+			  		audio1.src = "audio/presidente.mp3";
+			  		audio1.play();
+				}, 500);
+			})
+		}
+		
+			let candidatoP1 = document.getElementById('candidatoP1')
+            let candidatoP2 = document.getElementById('candidatoP2')
+            let candidatoP3 = document.getElementById('candidatoP3')
+            let candidatoP0 = document.getElementById('candidatoP0')
+
+            candidatoP1.addEventListener('click', function(){
+                sessionStorage.setItem('presidente', 'LUIS ABINADER')
+                sessionStorage.setItem('imageSrc', 'images/candidatos/abinader.png')
+				sessionStorage.setItem('numeroP', 1)
+                window.location.href = 'candidato_pres.html'
+            })
+            
+            candidatoP2.addEventListener('click', function(){
+                sessionStorage.setItem('presidente', 'CANDIDATO 2')
+                sessionStorage.setItem('imageSrc', 'images/candidatos/Candidato-M.PNG')
+				sessionStorage.setItem('numeroP', 2)
+                window.location.href = 'candidato_pres.html'
+            })
+            
+            candidatoP3.addEventListener('click', function(){
+                sessionStorage.setItem('presidente', 'CANDIDATO 3')
+                sessionStorage.setItem('imageSrc', 'images/candidatos/Candidato-M.PNG')
+				sessionStorage.setItem('numeroP', 3)
+                window.location.href = 'candidato_pres.html'
+            })
+            
+            candidatoP0.addEventListener('click', function(){
+                sessionStorage.setItem('presidente', 'NINGUNO')
+                sessionStorage.setItem('imageSrc', 'images/candidatos/ninguno.png')
+				sessionStorage.setItem('numeroP', 0)
+                window.location.href = 'candidato_pres.html'
+			})
+			
+			
+	</script>
+</body>
+</html>
