@@ -70,7 +70,7 @@
                                                 </tr>
                                                 <tr>
                                                     <th><p class="negrita derecha">Municipio:</p></th>
-                                                    <td><p class="izquierdaTh">Demo</p></td>
+                                                    <td><p class="izquierdaTh" id="municipio"></p></td>
                                                 </tr>
                                                 <tr>
                                                     <th><p class="negrita derecha">Circunscripción:</p></th>
@@ -189,6 +189,7 @@
 		document.getElementById('presidente').innerText = sessionStorage.getItem('presidente')
 		document.getElementById('diputado').innerText = sessionStorage.getItem('diputado')
 		document.getElementById('regidor').innerText = sessionStorage.getItem('regidor')
+		document.getElementById('municipio').innerText = sessionStorage.getItem('municipio')
 
 		document.getElementById('reset').addEventListener('click', function(){
 			sessionStorage.clear()
