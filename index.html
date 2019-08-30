@@ -73,6 +73,15 @@
 						<p>Te gustaria recibir una ayuda auditiva durante todo el proceso?</p>
 						<img src="images/volumen.gif" alt="" style="max-width: 50%;">
 					</div>
+
+					<div class="form-group col-md-8">
+						<label for="inputState">Municipio</label>
+						<select id="municipio" class="form-control">
+						  <option selected>San Pedro de Macoris</option>
+						  <option>Quisqueya</option>
+						</select>
+					  </div>
+
 					<div class="modal-footer">
 					  <button type="button" class="btn btn-secondary" id="btn-no" data-dismiss="modal">No Gracias</button>
 					  <button type="button" class="btn btn-primary" id="btn-si">Si Quiero!</button>
@@ -157,6 +166,7 @@
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
+		let municipio = document.getElementById('municipio')
 		$(document).ready(function(){
 		  setTimeout(function(){
 			  $("#pregunta").modal('show');
@@ -164,6 +174,7 @@
 		})
 		$('#btn-si').click(function(){
 			$("#pregunta").modal('hide');
+			sessionStorage.setItem('municipio', municipio.options[municipio.selectedIndex].value)
 			setTimeout(function(){
 			  var audio = new Audio();
 			  audio.src = "audio/seleccion_partido.mp3";
@@ -173,6 +184,7 @@
 		})
 
 		$('#btn-no').click(function(){
+			sessionStorage.setItem('municipio', municipio.options[municipio.selectedIndex].value)
 			sessionStorage.clear()
 		})
 

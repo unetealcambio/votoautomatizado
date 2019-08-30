@@ -81,14 +81,14 @@
 					<h5 class="text-grande">TOQUE NUEVAMENTE EL RECUADRO PARA CONFIRMAR</h5>
 				</div>
 			</div>
-			<a href="regidor.html" class="col-12 col-md-3 btn btn-success"><span class="text-grande black-text blinking">CONTINUAR</span></a>
+			<a class="col-12 col-md-3 btn btn-success" id="linkRegidor1"><span class="text-grande black-text blinking">CONTINUAR</span></a>
 		</div>
 
 		<div class="row justify-content-center" id="partidos-gallery">
 			<div class="col-6 col-md-5">
 					<div class="thumbnail marco" style="display: flex;justify-content: flex-end;">
 							<div class="numero"><p style="text-align: center; vertical-align: middle" id="numeroD"></p></div>
-					<a href="regidor.html">
+					<a id="linkRegidor2">
 						<img src="" class="img-thumbnail" id="fotoCandidatoD">
 						<p class="caption"><strong><span id="nombreD"></span> <BR>DIPUTADO(A)</strong></p>
 					</a>
@@ -115,8 +115,40 @@
 		document.getElementById('fotoCandidatoD').setAttribute('src', sessionStorage.getItem('imageSrcD'))
 		document.getElementById('nombreD').innerText = sessionStorage.getItem('diputado')
 		document.getElementById('numeroD').innerText = sessionStorage.getItem('numeroD')
+		let linkRegidor1 = document.getElementById('linkRegidor1')
+		let linkRegidor2 = document.getElementById('linkRegidor2')
+
         if (sessionStorage.getItem('numeroD') === '0') {
 			document.getElementById('numeroD').innerText = ''
+		}
+
+		switch (sessionStorage.getItem('municipio')) {
+			case 'Consuelo':
+				linkRegidor1.setAttribute('href', 'regidor_consuelo.html')
+				linkRegidor2.setAttribute('href', 'regidor_consuelo.html')
+				break;
+			
+			case 'Guayacanes':
+				
+				break;
+
+			case 'Quisqueya':
+				linkRegidor1.setAttribute('href', 'regidor_quisqueya.html')
+				linkRegidor2.setAttribute('href', 'regidor_quisqueya.html')
+				break;
+
+			case 'Ramon Santana':
+				
+				break;
+
+			case 'San Jose De Los Llanos':
+				
+				break;
+
+			default:
+			linkRegidor1.setAttribute('href', 'regidor.html')
+				linkRegidor2.setAttribute('href', 'regidor.html')
+				break;
 		}
 
 		if(sessionStorage.getItem('audio') === 'si'){

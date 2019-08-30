@@ -75,7 +75,7 @@
 			</div>	
 		</div>
 		<div class="row text-uppercase text-center " >
-			<a href="regidor.html" class="col-12 col-md-3 btn btn-danger"><span class="text-grande black-text">RETORNAR</span></a>
+			<a class="col-12 col-md-3 btn btn-danger" id="retornar"><span class="text-grande black-text">RETORNAR</span></a>
 			<div class="col-12 col-md-6 black">
 				<div class="divHijo">
 					<h5 class="text-grande">TOQUE NUEVAMENTE EL RECUADRO PARA CONFIRMAR</h5>
@@ -110,11 +110,20 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script>
 
+		let retornar = document.getElementById('retornar')
 		document.getElementById('fotoCandidatoR').setAttribute('src', sessionStorage.getItem('imageScrR'))
 		document.getElementById('nombreR').innerText = sessionStorage.getItem('regidor')
 		document.getElementById('numeroR').innerText = sessionStorage.getItem('numeroR')
         if (sessionStorage.getItem('numeroR') === '0') {
 			document.getElementById('numeroR').innerText = ''
+		}
+
+		if (sessionStorage.getItem('municipio') === 'San Pedro De Macoris') {
+			retornar.setAttribute('href', 'regidor.html')
+		}
+
+		if (sessionStorage.getItem('municipio') === 'Quisqueya') {
+			retornar.setAttribute('href', 'regidor_quisqueya.html')
 		}
 
 		if(sessionStorage.getItem('audio') === 'si'){
